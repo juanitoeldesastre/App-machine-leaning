@@ -1,0 +1,24 @@
+Age
+DistanceFromHome
+Education
+MonthlyIncome
+NumCompaniesWorked
+TotalWorkingYears
+YearsAtCompany
+BusinessTravel_Non-Travel
+BusinessTravel_Travel_Frequently
+BusinessTravel_Travel_Rarely
+Department_Human Resources
+Department_Research & Development
+Department_Sales
+JobRole_Healthcare Representative
+JobRole_Human Resources
+JobRole_Laboratory Technician
+JobRole_Manager
+JobRole_Manufacturing Director
+JobRole_Research Director
+JobRole_Research Scientist
+JobRole_Sales Executive
+JobRole_Sales Representative
+OverTime_No
+OverTime_Yes

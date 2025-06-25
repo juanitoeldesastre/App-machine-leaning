@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predicción de Rotación de Empleados</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Predicción de Rotación</h1>
+    <form id="predict-form">
+      <label>Edad: <input type="number" name="Age" required /></label>
+      <label>Frecuencia de viajes:
+        <select name="BusinessTravel">
+          <option value="Travel_Rarely">Rara vez</option>
+          <option value="Travel_Frequently">Frecuente</option>
+          <option value="Non-Travel">No viaja</option>
+        </select>
+      </label>
+      <label>Departamento:
+        <select name="Department">
+          <option value="Sales">Ventas</option>
+          <option value="Research & Development">I+D</option>
+          <option value="Human Resources">Recursos Humanos</option>
+        </select>
+      </label>
+      <label>Distancia desde casa: <input type="number" name="DistanceFromHome" required /></label>
+      <label>Nivel educativo (1 a 5): <input type="number" name="Education" required min="1" max="5" /></label>
+      <label>Cargo:
+        <select name="JobRole">
+          <option value="Sales Executive">Ejecutivo de ventas</option>
+          <option value="Research Scientist">Científico de investigación</option>
+          <option value="Laboratory Technician">Técnico de laboratorio</option>
+          <option value="Manufacturing Director">Director de manufactura</option>
+          <option value="Healthcare Representative">Representante de salud</option>
+          <option value="Manager">Gerente</option>
+          <option value="Sales Representative">Representante de ventas</option>
+          <option value="Research Director">Director de investigación</option>
+          <option value="Human Resources">Recursos Humanos</option>
+        </select>
+      </label>
+      <label>Ingreso mensual: <input type="number" name="MonthlyIncome" required /></label>
+      <label>Nº de empresas trabajadas antes: <input type="number" name="NumCompaniesWorked" required /></label>
+      <label>¿Hace horas extra?
+        <select name="OverTime">
+          <option value="Yes">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <label>Años totales trabajados: <input type="number" name="TotalWorkingYears" required /></label>
+      <label>Años en la empresa: <input type="number" name="YearsAtCompany" required /></label>
+      <button type="submit">Predecir</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <!-- script.js cargado después del DOM -->
+  <script src="script.js"></script>
+</body>
+</html>
