@@ -46,18 +46,62 @@ tensorflowjs_converter --input_format=keras modelo.h5 modelo_tfjs/
 
 ---
 
-
-## ⚙️ Preprocesamiento
+## Preprocesamiento
 
 * ✔️ One-hot encoding para variables categóricas
 * ✔️ Escalado de características numéricas usando `StandardScaler`
 * ✔️ División 80/20 para entrenamiento/prueba
 * ✔️ Se guardó el orden de columnas en `feature_columns.txt`
-* ✔️ Se exportó el `scaler.json` con medias y desviaciones estándar
+* ✔️ Se exportó el `scaler.json` con medias y desviaciones estándar para mi webapp con tfjs
 
 📌 Las variables categóricas fueron transformadas con **one-hot encoding**.
 
-![One-hot encoding](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/Code1.png)
+**BusinessTravel:**
+
+| Código | Valor              |
+|--------|--------------------|
+| 1      | Travel_Rarely      |
+| 2      | Travel_Frequently  |
+| 3      | Non-Travel         |
+
+**Department:**
+
+| Código | Valor                   |
+|--------|-------------------------|
+| 1      | Sales                   |
+| 2      | Research & Development  |
+| 3      | Human Resources         |
+
+**JobRole:**
+
+| Código | Valor                     |
+|--------|---------------------------|
+| 1      | Sales Executive           |
+| 2      | Research Scientist        |
+| 3      | Laboratory Technician     |
+| 4      | Manufacturing Director    |
+| 5      | Healthcare Representative |
+| 6      | Manager                   |
+| 7      | Sales Representative      |
+| 8      | Research Director         |
+| 9      | Human Resources           |
+
+**OverTime:**
+
+| Código | Valor |
+|--------|-------|
+| 1      | Yes   |
+| 2      | No    |
+
+---
+
+**One-hot encoding** transforma valores categoricos (strings) en columnas binarias volviendolo facil de interpretar para la maquina, un modelo matematico no puede interpretar un texto. Es mas sencillo dibujarlo como una matriz
+
+![One-hot encoding](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/BusinessTravelCode.png)
+
+**Attrition** convertir a binario para que la respuesta pase de `true` or `false` a `1` y `0`
+
+**Escalar** valores numericos con `StandardScaler` de `Scikit-learn` para que mi modelo procese mejor los datos numéricos.
 
 ---
 
@@ -80,25 +124,17 @@ model = Sequential([
 
 ---
 
-## 🌐 Aplicación Web
+## Aplicación Web
 
-El modelo fue exportado y cargado en una WebApp desarrollada con:
+El modelo fue exportado a tfjs y cargado en una WebApp desarrollada con:
 
 * HTML + CSS
 * JavaScript (`script.js`)
 * TensorFlow\.js
 
-La interfaz permite ingresar datos de un empleado y obtener la probabilidad de rotación:
+La interfaz simple permite ingresar datos de un empleado y obtener la probabilidad de rotación:
 
-![Formulario Web](https://github.com/tu-usuario/tu-repo/ruta/formulario-web.png)
-
----
-
-## 🧪 Resultado
-
-Ejemplo de predicción con datos ficticios:
-
-![Resultado](https://github.com/tu-usuario/tu-repo/ruta/resultado-prediccion.png)
+![Formulario Web](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/webapp.png)
 
 ---
 
@@ -119,19 +155,3 @@ Employee-Churn/
 ```
 
 ---
-
-## 🧠 Conclusión
-
-Este proyecto no solo ayudó a entender el proceso completo de desarrollo de un modelo de ML, sino también los retos de **compatibilidad de versiones** y la **implementación en frontend con TensorFlow\.js**.
-
----
-
-Si subes las imágenes al repositorio, recuerda reemplazar las URLs tipo:
-
-```markdown
-![Texto](https://github.com/tu-usuario/tu-repo/ruta/imagen.png)
-```
-
-por la URL real de tu imagen.
-
-¿Quieres que también te genere automáticamente las imágenes de ejemplo si me pasas capturas?
