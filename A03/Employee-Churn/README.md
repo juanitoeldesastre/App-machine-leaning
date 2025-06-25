@@ -146,4 +146,7 @@ La interfaz simple permite ingresar datos de un empleado y obtener la probabilid
 
 ---
 
-![Analisis de datos](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/plot.png)
+# Analisis de la data Attrition
+
+![AnalisisData](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/plot.png)
+
