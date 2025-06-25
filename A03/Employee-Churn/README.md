@@ -4,6 +4,14 @@ Esta Tarea es un proyecto web que predice la probabilidad de que un empleado aba
 
 ---
 
+### Uso
+
+Correr webapp con el siguiente comando
+
+```bash
+npx http-server . -p 8080
+```
+
 ### Problemas
 
 Una de las partes más difíciles fue **exportar el modelo a TensorFlow\.js**. Me aparecía este error al intentar convertir el archivo `.h5`:
@@ -138,20 +146,4 @@ La interfaz simple permite ingresar datos de un empleado y obtener la probabilid
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```
-Employee-Churn/
-├── modelo.h5
-├── modelo_tfjs/           # Modelo exportado para TF.js
-│   ├── model.json
-│   └── group1-shard*.bin
-├── scaler.json            # Media y escala para normalizar
-├── feature_columns.txt    # Orden de columnas
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-```
-
----
+![Analisis de datos](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/plot.png)
