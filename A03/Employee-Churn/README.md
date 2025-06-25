@@ -8,7 +8,7 @@ Esta Tarea es un proyecto web que predice la probabilidad de que un empleado aba
 
 Una de las partes más difíciles fue **exportar el modelo a TensorFlow\.js**. Me aparecía este error al intentar convertir el archivo `.h5`:
 
-![Error]https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/CAPTURA.png
+![Error al exportar modelo](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/CAPTURA.png)
 
 > Este error se debía a que faltaba el archivo `inference.so` en Windows. Intenté varias veces sin éxito.
 
