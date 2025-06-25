@@ -8,7 +8,7 @@ Esta Tarea es un proyecto web que predice la probabilidad de que un empleado aba
 
 Una de las partes más difíciles fue **exportar el modelo a TensorFlow\.js**. Me aparecía este error al intentar convertir el archivo `.h5`:
 
-![Error](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/CAPTURA.png)
+![Error]https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/CAPTURA.png
 
 > Este error se debía a que faltaba el archivo `inference.so` en Windows. Intenté varias veces sin éxito.
 
@@ -97,7 +97,7 @@ tensorflowjs_converter --input_format=keras modelo.h5 modelo_tfjs/
 
 **One-hot encoding** transforma valores categoricos (strings) en columnas binarias volviendolo facil de interpretar para la maquina, un modelo matematico no puede interpretar un texto. Es mas sencillo dibujarlo como una matriz
 
-![One-hot encoding](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/BusinessTravelCode.png)
+![One-hot encoding](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/BusinessTravelCode.png)
 
 **Attrition** convertir a binario para que la respuesta pase de `true` or `false` a `1` y `0`
 
@@ -134,7 +134,7 @@ El modelo fue exportado a tfjs y cargado en una WebApp desarrollada con:
 
 La interfaz simple permite ingresar datos de un empleado y obtener la probabilidad de rotación:
 
-![Formulario Web](https://github.com/juanitoeldesastre/taller-ml-apps/tree/main/A03/Employee-Churn/img/webapp.png)
+![Formulario Web](https://raw.githubusercontent.com/juanitoeldesastre/taller-ml-apps/main/A03/Employee-Churn/img/webapp.png)
 
 ---
 
