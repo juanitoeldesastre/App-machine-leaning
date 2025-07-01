@@ -67,6 +67,13 @@ Se desarrolló una aplicación web utilizando HTML, CSS y JavaScript, que permit
 - Si la probabilidad es **mayor a 0.5**, se clasifica como **calle sucia**.
 - Si es **menor a 0.5**, se clasifica como **calle limpia**.
 
+### Ejemplo de calle limpia
+
+![Limpia](./Captura03.PNG)
+
+### Ejemplo de calle sucia
+
+![Sucia](./Captura02.PNG)
 ---
 
 ## ⚙️ Versiones
