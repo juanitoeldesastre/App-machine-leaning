@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detector de basura urbana</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>¿La ciudad esta limpia o sucia?</h1>
+
+    <input type="file" id="imageUpload" accept="image/*" />
+    <div class="preview">
+      <img id="previewImage" src="" alt="Vista previa" />
+    </div>
+
+    <button id="predictBtn">Aceptar</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

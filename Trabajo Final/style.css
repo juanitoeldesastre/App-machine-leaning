@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 24px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 2px auto;
+}
+
+.preview {
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+#previewImage {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  object-fit: cover;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 12px;
+  margin: 1px auto 0 auto;
+  font-size: 1rem;
+  background-color: #00659f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #25a4e4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  display: none;
+  width: 100%;
+  max-width: 450px;
+  margin: 1px auto 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+
+/* Estilo para calle limpia */
+.result-clean {
+  display: block;
+  color: #1f5c2f;
+  background-color: #e7f8ec;
+  border-color: #a9dbb9;
+}
+
+/* Estilo para calle sucia */
+.result-dirty {
+  display: block;
+  color: #802727;
+  background-color: #fdecec;
+  border-color: #f1b6b6;
+}
+
