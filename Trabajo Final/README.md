@@ -6,6 +6,23 @@ La acumulación de basura impacta negativamente en la calidad del entorno urbano
 
 ---
 
+## 🚀 Uso
+
+1. Descarga los archivos `index.html`, `style.css` y `script.js`, junto con la carpeta `modelo_tfjs`.
+
+2. Abre una terminal en la carpeta del proyecto y ejecuta:
+
+   ```bash
+   npx http-server
+   ```
+
+3. Abre tu navegador y accede a la dirección local que te muestra (por ejemplo: `http://localhost:8080`).
+
+---
+
+¿Quieres que también revise y corrija el resto del documento por completo?
+
+
 ## 🗂️ Dataset
 
 Link: https://www.kaggle.com/datasets/nw8vqlafd/street-classification-dataset
